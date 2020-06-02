@@ -4,7 +4,7 @@ max_key = 26
 cipher = 7
 result = ""
 
-for i in range(0, x):
+while len(secret) != len(result):
     for char in secret:
         if char.isupper() == True:
             count = ord(char) + cipher
@@ -25,6 +25,5 @@ for i in range(0, x):
                 encr_ltr = chr(count)
                 result += encr_ltr
         elif char.isupper() == False or char.lower() == False:
-            #count = ord(char) + cipher
-            #encr_ltr = chr(count)
             result += char
+print("Encrypted message is: \n" + result)
