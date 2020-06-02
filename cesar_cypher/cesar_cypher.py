@@ -6,7 +6,7 @@ result = ""
 
 while len(secret) != len(result):
     for char in secret:
-        if char.isupper() == True:
+        if char.isupper() is True:
             count = ord(char) + cipher
             if count > 90:
                 count = count - 26
@@ -15,7 +15,7 @@ while len(secret) != len(result):
             else:
                 encr_ltr = chr(count)
                 result += encr_ltr
-        if char.islower() == True:
+        if char.islower() is True:
             count = ord(char) + cipher
             if count > 122:
                 count = count - 26
