@@ -24,6 +24,6 @@ while len(secret) != len(result):
             else:
                 encr_ltr = chr(count)
                 result += encr_ltr
-        elif char.isupper() == False or char.lower() == False:
+        elif char.isupper() is False or char.lower() is False:
             result += char
 print("Encrypted message is: \n" + result)
