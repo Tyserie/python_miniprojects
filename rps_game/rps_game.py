@@ -42,6 +42,5 @@ user = int(input("Enter number based on your choice, 0 = scissor, 1 = Rock, 2 = 
 computer = random.randint(0, 2)
 user_hand = get_hand(user)
 comp_hand = get_hand(computer)
-print(f"You choose {user_hand}, computer choose {comp_hand}!")
-
 determine_winner(user_hand, comp_hand)
+print(f"You choose {user_hand}, computer choose {comp_hand}!")
